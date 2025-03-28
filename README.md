@@ -1,54 +1,138 @@
-Powered by Koii - Over 60,000 community devices at your fingertips
+# EZSandbox: Decentralized Application Development Tutorial
 
-# Welcome to EZSandbox
-In this series of workshops, we'll get you up and running to build your first community-hosted application in no time.
+![Koii Network](https://img.shields.io/badge/Powered%20by-Koii%20Network-blue)
+![Tutorial Level](https://img.shields.io/badge/Level-Beginner%20to%20Intermediate-green)
 
-This sandbox will take you through a few phases of development to try using Koii Tasks at all levels.
+## Overview
 
-1. Deploy Locally on your Koii Task Node to Debug and Iterate Rapidly
+Welcome to the EZSandbox, a comprehensive tutorial series designed to guide developers through building decentralized applications (dApps) on the Koii Network. This hands-on learning path will transform you from a curious developer to a confident creator of community-hosted, decentralized applications.
 
-2. Deploy to Docker to test audits and incentive mechanisms
+### What You'll Learn
+- Fundamentals of decentralized computing
+- Building and deploying Tasks on the Koii Network
+- Implementing incentive mechanisms for distributed computing
+- Secure task development and deployment strategies
 
-3. Launch on the Community Cloud
+### Technologies Covered
+- Node.js
+- Docker
+- Decentralized task computation
+- Blockchain and token economics
 
-# Lessons and Code Samples
-In this project, we'll start by demonstrating the key features of the Node compute environment and after some local testing, we'll harden our incentive mechanism and deploy it to the Koii cloud. 
+### Prerequisites
+- Basic JavaScript/Node.js knowledge
+- Familiarity with command-line interfaces
+- A computer with:
+  - Node.js (v14+ recommended)
+  - Docker (optional, for advanced lessons)
+  - Git
+  - Code editor (VS Code, WebStorm, etc.)
 
-Koii is a network of people, using their nodes to support a diverse ecosystem of products and services, all operated by community members like you.
+## Getting Started
 
-Decentralized Applications on the Koii Cloud run in modules called 'Tasks', and anyone can join by installing a Koii Node, a Tool sort of like a document-editor or web browser which reads and operates Tasks instead of documents or web pages. 
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-repo/ezsandbox.git
+cd ezsandbox
+```
 
-At the end of these tutorials, you'll be ready to build your first Koii Application that other community members can then run on their Node. 
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-## Lesson 1: Your Node
-In the first lesson, we'll set up a Koii Node and start debugging an existing Task. 
+### 3. Set Up Development Environment
+- Install Koii Node software from [Koii's official website](https://www.koii.network)
+- Configure your development node
+- Set up necessary environment variables using `.env.sample` files
 
-This lesson will teach you:
- - How to debug tasks live with your Node
- - How Tasks run in the node
- - How to connect to your node
- - How to build your Task Module and ship it for production
+## Tutorial Structure
 
-## Lesson 2: Storage & Networking 
-Once we've got the basics down, it's time to move on to some standard use cases for decentralized applications. 
+The EZSandbox is organized into progressive learning modules:
 
-To get started, we'll build out a simple file server and add some HTTP server endpoints. Once that's online, we will deploy our app onto a group of nodes with docker, and have them send a file around to eachother. 
+### Lesson 1: Your First Koii Node
+- **Focus**: Node setup and basic task debugging
+- **Key Skills**: 
+  - Koii Node configuration
+  - Task debugging techniques
+  - Local development workflow
+- **Files**: `/hello-world`
 
-## Lesson 3: Data Sharing & Replication Incentives
-With this step online, we can now start to add audit mechanisms and incentives.
+### Lesson 2: Storage & Networking
+- **Focus**: Building a distributed file server
+- **Key Skills**:
+  - HTTP endpoint creation
+  - Docker deployment
+  - Inter-node communication
+- **Files**: `/google-doodle`
 
-Audits keep things secure, allowing nodes to verify eachother's work.
+### Lesson 3-6: Advanced Topics
+- Data sharing mechanisms
+- Security implementations
+- Performance optimization
+- Task deployment and maintenance
 
-Incentives allow the Task to make payments, either in KOII, USDC, or another token (your own, if you dare!) and reward nodes that pass audits.
+## Learning Outcomes
 
-## Lesson 4: Security and Hardening
-with the basics implemented, this lesson will cover how to add authorized accounts, verify signatures, and manage general authentication and data authority issues. 
+By completing this tutorial, you will:
+- ✅ Understand decentralized computing principles
+- ✅ Build and deploy your first Koii Task
+- ✅ Implement secure, incentive-driven applications
+- ✅ Gain hands-on experience with distributed systems
 
-## Lesson 5: Getting faucet tokens and deploying your task
-Once everything is tightened down, it's time to get your community and start running nodes. We'll get you a small grant in KOII to fund your task bounty, deploy the task, and run it on your node.
+## Code Examples and Exercises
 
-## Lesson 6: Performance Improvements & Iteration Lifecycle
-After your task is live, it's time to consider improving your work.
+Each lesson includes:
+- Inline code snippets
+- Practical coding exercises
+- Checkpoint challenges
+- Step-by-step implementation guides
 
-In this final lesson, we'll cover some tips on debugging, multi-node simulations, and how to publish an update to your Task. 
-# ezsandbox
+### Recommended Workflow
+1. Read the lesson documentation
+2. Examine provided code examples
+3. Complete hands-on exercises
+4. Test your implementation
+5. Verify against solution code
+
+## Project Structure
+
+```
+ezsandbox/
+│
+├── hello-world/          # Basic task introduction
+│   ├── index.js
+│   ├── coreLogic.js
+│   └── test/
+│
+├── google-doodle/        # Advanced networking example
+│   ├── index.js
+│   ├── _koiiNode/
+│   └── helpers/
+│
+└── README.md             # You are here!
+```
+
+## Next Steps & Further Reading
+
+After completing the tutorial:
+- Join the [Koii Developer Community](https://discord.gg/koii)
+- Explore [Koii Documentation](https://docs.koii.network)
+- Participate in bounty programs
+- Build and submit your own Tasks
+
+## Community and Support
+
+- 📢 Discord: [Koii Network Discord](https://discord.gg/koii)
+- 📝 Documentation: [docs.koii.network](https://docs.koii.network)
+- 🐦 Twitter: [@KoiiNetwork](https://twitter.com/koiinetwork)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+**Happy Decentralized Development! 🚀**
